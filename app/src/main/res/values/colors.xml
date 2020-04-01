@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1c48e9</color>
+    <color name="colorPrimaryDark">#1855f0</color>
+    <color name="colorAccent">#2e7d32</color>
+    <color name="navigationBarColor">#59c9f6</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#00c853</color>
+    <color name="red">#e53935</color>
+    <color name="darkRed">#b71c1c</color>
+    <color name="black">#000000</color>
+    <color name="gold">#ffa000</color>
+    <color name="orange">#ff6f00</color>
+</resources>

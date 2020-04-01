@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_start">
+
+    <fragment
+        android:id="@+id/nav_start"
+        android:name="com.mrmaximka.autoexpert.ui.start.StartFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_start">
+
+        <action
+            android:id="@+id/action_startFragment_to_categoryFragment"
+            app:destination="@+id/nav_category" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.mrmaximka.autoexpert.ui.category.CategoryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_category" >
+
+        <action
+            android:id="@+id/action_categoryFragment_to_listFragment"
+            app:destination="@+id/nav_list" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_list"
+        android:name="com.mrmaximka.autoexpert.ui.list.ListFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_list" >
+
+        <action
+            android:id="@+id/action_listFragment_to_questFragment"
+            app:destination="@+id/nav_quest" />
+
+        <argument
+            android:name="idCategory"
+            app:argType="integer"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_quest"
+        android:name="com.mrmaximka.autoexpert.ui.quest.QuestFragment"
+        android:label="Quest"
+        tools:layout="@layout/fragment_quest" >
+
+        <action
+            android:id="@+id/action_questFragment_to_questFragment"
+            app:destination="@+id/nav_quest"
+            app:popUpTo="@+id/nav_list"/>
+
+    </fragment>
+</navigation>

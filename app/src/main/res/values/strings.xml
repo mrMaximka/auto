@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Auto Expert</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="default_coins">0</string>
+    <string name="default_icon">coin</string>
+    <string name="add_coins">+10</string>
+    <string name="dialog_help_add">Открыть букву — 10</string>
+    <string name="dialog_help_del">Убрать лишнее — 20</string>
+    <string name="dialog_help_answer">Решить — 50</string>
+</resources>

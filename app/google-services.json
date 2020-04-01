@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "276619710433",
+    "firebase_url": "https://auto-expert-653ed.firebaseio.com",
+    "project_id": "auto-expert-653ed",
+    "storage_bucket": "auto-expert-653ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276619710433:android:cbd7dc417e78b1eabc0ca0",
+        "android_client_info": {
+          "package_name": "com.mrmaximka.autoexpert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276619710433-9s0od6pnth0n5j8koshlaf1otfvs5v9d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mrmaximka.autoexpert",
+            "certificate_hash": "65a65df09222f121834ba35c3f9e6846fd0e64d6"
+          }
+        },
+        {
+          "client_id": "276619710433-5t1a6ofjll85ga5k65jrke1quv9oto3f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOauQbZRcmwVjatjEAJXljKyvsl112uLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276619710433-5t1a6ofjll85ga5k65jrke1quv9oto3f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
