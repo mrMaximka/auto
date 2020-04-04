@@ -20,16 +20,16 @@ class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         elementClick: ListAdapter.OnClick,
         width: Int,
         position: Int,
-        partValue: Int,
+        modelId: Int,
         context: Context
     ) {
         this.model = quest
         this.elementClick = elementClick
         this.context = context
-        if (partValue == 1){
+        if (modelId == 1){
             val color = this.context.resources.getColor(R.color.colorAccent)
             itemView.element_card.setCardBackgroundColor(color)
-        }else if (partValue == 2){
+        }else if (modelId == 2){
             val color = this.context.resources.getColor(R.color.darkRed)
             itemView.element_card.setCardBackgroundColor(color)
         }

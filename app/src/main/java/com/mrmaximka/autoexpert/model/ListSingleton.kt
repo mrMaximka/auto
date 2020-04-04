@@ -3,6 +3,7 @@ package com.mrmaximka.autoexpert.model
 class ListSingleton {
 
     private var list: ArrayList<QuestModel> = ArrayList()
+    private lateinit var category: String
 
     fun add(model: QuestModel){
         list.add(model)
@@ -18,6 +19,14 @@ class ListSingleton {
 
     fun getSize() : Int{
         return list.size
+    }
+
+    fun getCategory() : String{
+        return category
+    }
+
+    fun setCategory(category: String){
+        this.category = category
     }
 
     companion object{

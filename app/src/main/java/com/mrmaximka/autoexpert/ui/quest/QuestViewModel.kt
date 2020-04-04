@@ -28,6 +28,7 @@ class QuestViewModel : ViewModel() {
     private lateinit var userModel: UserModel
     private lateinit var database: FirebaseDatabase
     private lateinit var myRef: DatabaseReference
+    private lateinit var category: String
     var position: Int = 0
     var needNextQuest = MutableLiveData<Boolean>().apply { value = false }
 
@@ -46,6 +47,7 @@ class QuestViewModel : ViewModel() {
         database = FirebaseDatabase.getInstance()
         myRef = database.reference
         model = single.getModel(questPosition)
+        category = single.getCategory()
 
 
         val list: ArrayList<QuestSymbol> = ArrayList()
@@ -159,11 +161,11 @@ class QuestViewModel : ViewModel() {
     }
 
     private fun showFail() {
-        myRef.child(userModel.getUid()).child("parts").child(position.toString()).setValue(2)
+        myRef.child(userModel.getUid()).child(category).child(model.id).setValue(2)
     }
 
     private fun showWin() {
-        myRef.child(userModel.getUid()).child("parts").child(position.toString()).setValue(1)
+        myRef.child(userModel.getUid()).child(category).child(model.id).setValue(1)
         val dialog = AlertDialog.Builder(context)
         dialog.setTitle("Win!")
         dialog.setMessage(model.description)

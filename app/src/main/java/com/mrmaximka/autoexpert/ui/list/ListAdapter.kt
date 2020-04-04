@@ -27,7 +27,7 @@ class ListAdapter(
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        holder.bind(elements[position], elementClick, width, position, userModel.getPartValue(position), context)
+        holder.bind(elements[position], elementClick, width, position, userModel.getPartValue(elements[position].id.toInt()), context)
     }
 
     fun setElements(list: ArrayList<QuestModel>){

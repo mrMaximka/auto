@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:text="Внимание!"
+        android:textStyle="bold"
+        android:textColor="@color/darkRed"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Данная учетная запись уже существует.\n Использовать сохраненные данные?"/>
+
+    <Button
+        android:id="@+id/alert_account_load_old"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        style="@style/Widget.AppCompat.ActionButton"
+        android:background="@drawable/button_help_add"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Использовать сохраненные данные"/>
+
+    <Button
+        android:id="@+id/alert_account_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        style="@style/Widget.AppCompat.ActionButton"
+        android:background="@drawable/button_help_answer"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Отмена"/>
+
+</LinearLayout>

@@ -87,9 +87,10 @@ class ListViewModel : ViewModel() {
     private fun getCollectionName(categoryId: Int) : String{
         var name = ""
         when(categoryId){
-            1 -> name = "tests"
+            1 -> name = "parts"
             2 -> name = "brands"
         }
+        single.setCategory(name)
         return name
     }
 
